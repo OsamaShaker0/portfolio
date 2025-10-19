@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Osama Shaker | Backend Wizard 🧙‍♂️</title>
+    <title>Osama Shaker | Backend Developer</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -17,42 +17,48 @@
 
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #fffdf7;
-        color: #2c3e50;
-        line-height: 1.6;
+        background-color: #f8f9f5;
+        color: #2e2e2e;
+        line-height: 1.7;
       }
 
       header {
-        background: linear-gradient(135deg, #f9a826, #fbc02d);
+        background: linear-gradient(135deg, #2e7d32, #66bb6a);
         color: #fff;
-        padding: 3rem 1rem;
         text-align: center;
+        padding: 3rem 1rem;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
 
       header h1 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
+        animation: fadeInDown 1s ease;
       }
 
       header p {
         font-size: 1.2rem;
         max-width: 600px;
         margin: 0 auto;
+        opacity: 0.95;
       }
 
       nav {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
       }
 
       nav a {
-        color: #fff;
+        color: #e8f5e9;
         margin: 0 1rem;
         font-weight: 600;
         text-decoration: none;
+        transition: color 0.3s ease;
       }
 
       nav a:hover {
-        text-decoration: underline;
+        color: #c8e6c9;
       }
 
       main {
@@ -63,41 +69,44 @@
 
       h2 {
         font-size: 2rem;
-        color: #f57f17;
+        color: #388e3c;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #ffe082;
+        border-bottom: 2px solid #a5d6a7;
         padding-bottom: 0.3rem;
       }
 
       .project-card {
-        background-color: #fffaf0;
-        border: 2px dashed #fdd835;
-        border-radius: 10px;
+        background-color: #ffffff;
+        border: 1px solid #c8e6c9;
+        border-radius: 12px;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease;
       }
 
       .project-card:hover {
-        background-color: #fff3cd;
-        transform: translateY(-4px);
+        background-color: #f1f8e9;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(46, 125, 50, 0.15);
       }
 
       .project-card h3 {
-        color: #e65100;
-      }
-
-      .project-card p {
-        margin: 0.5rem 0;
+        color: #2e7d32;
       }
 
       .project-card a {
-        color: #0097a7;
+        color: #1b5e20;
         font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-card a:hover {
+        text-decoration: underline;
       }
 
       section#about,
-      section#contact {
+      section#contact,
+      section#tech {
         margin-top: 3rem;
       }
 
@@ -111,12 +120,25 @@
       }
 
       footer {
-        background-color: #f57f17;
+        background-color: #2e7d32;
         color: white;
         text-align: center;
         padding: 1rem;
         font-size: 0.9rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
@@ -124,11 +146,12 @@
     <header>
       <h1>Hi, I'm Osama 👋</h1>
       <p>
-        Backend Developer. Node.js Enthusiast. Occasional bug whisperer 🐛. I
-        turn coffee into scalable APIs ☕🚀.
+        Backend Developer • Node.js • Express.js • NestJS • Prisma • MongoDB<br />
+        Turning caffeine into clean, scalable APIs ☕🚀
       </p>
       <nav>
         <a href="#projects">Projects</a>
+        <a href="#tech">Tech Stack</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -136,9 +159,9 @@
 
     <main>
       <section id="projects">
-        <h2>📦 Cool Stuff I Built</h2>
-        
-         <div class="project-card">
+        <h2>📦 Featured Projects</h2>
+
+           <div class="project-card">
           <h3>My Car Value Api </h3>
           <p>
           Estimate car prices based on model, year, mileage & location,</p>
@@ -252,33 +275,50 @@
         </div>
       </section>
 
+      <section id="tech">
+        <h2>🧰 Tech Stack</h2>
+        <ul>
+        
+          <li>🚀 Node.js & Express.js</li>
+          <li>🔷 TS (TypeScript)</li>  
+          <li>⚙️ NestJS (modular architecture)</li>
+          <li>🗄️ Prisma ORM & MongoDB</li>
+          <li>🧪 Swagger API Documentation</li>
+          <li>💬 Handlebars templating</li>
+          <li>☁️ RESTful API Design</li>
+        </ul>
+      </section>
+
       <section id="about">
-        <h2>🤓 Who's this guy?</h2>
+        <h2>🤓 About Me</h2>
         <p>
-          I'm Osama — a backend developer with a love for clean code, clear
-          APIs, and clever architecture. I use Node.js, Express.js, MongoDB,
-          Docker, and a secret weapon: consistent coffee breaks. I'm all about
-          maintainable code, teamwork, and automating boring stuff.
+          I'm Osama — a backend developer passionate about building scalable and
+          maintainable APIs. I focus on clean architecture, performance, and
+          automating the boring stuff so developers (and users) can focus on
+          what matters.
         </p>
       </section>
 
       <section id="contact">
-        <h2>📬 Let's Talk!</h2>
-        <p>If you're hiring, collaborating, or just bored — reach out:</p>
+        <h2>📬 Contact</h2>
         <ul>
-          <li>Email: osamashaker136@gmail.com</li>
           <li>
-            GitHub:
+            📧 Email:
+            <a href="mailto:osamashaker136@gmail.com"
+              >osamashaker136@gmail.com</a
+            >
+          </li>
+            💻  GitHub:
             <a href="https://github.com/OsamaShaker0" target="_blank"
-              >OsamaShaker0</a
+              >@OsamaShaker0</a
             >
           </li>
           <li>
-            LinkedIn:
+            💼 LinkedIn:
             <a
               href="https://www.linkedin.com/in/osama-shaker-a91067266/"
               target="_blank"
-              >Osama on LinkedIn</a
+              >Osama Shaker</a
             >
           </li>
         </ul>
@@ -290,7 +330,7 @@
     </footer>
 
     <script>
-      console.log("👨‍💻 Welcome to Osama’s backend universe!");
+      console.log("🌿 Welcome to Osama’s backend universe!");
     </script>
   </body>
 </html>
